@@ -22,7 +22,7 @@ jobs:
           SAS: ${{ secrets.AZURE_SAS_TOKEN }}
         run: |
           az storage blob upload-batch \
-                 --account-name "$STORAGE_ACCOUNT" \
+                 --account-name "stcc57721a8d5abfee71bf7a" \
             --auth-mode key \
             --sas-token "$SAS" \
             --destination site --source site --overwrite \
