@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Write build info
+      - name: Write build info 
         run: |
           REDEPLOYED=false
           if [ "${{ github.run_number }}" -ge 2 ]; then REDEPLOYED=true; fi
